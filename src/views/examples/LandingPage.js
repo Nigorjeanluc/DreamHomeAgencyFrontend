@@ -17,7 +17,7 @@
 */
 import React from "react";
 // react plugin used to create charts
-import { Line } from "react-chartjs-2";
+// import { Line } from "react-chartjs-2";
 // reactstrap components
 import {
   Button,
@@ -37,7 +37,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
-import bigChartData from "variables/charts.js";
+// import bigChartData from "variables/charts.js";
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -447,7 +447,7 @@ class LandingPage extends React.Component {
               className="path2"
               src={require("assets/img/path2.png")}
             />
-            <Col md="12">
+            {/* <Col md="12">
               <Card className="card-chart card-plain">
                 <CardHeader>
                   <Row>
@@ -467,7 +467,7 @@ class LandingPage extends React.Component {
                   </div>
                 </CardBody>
               </Card>
-            </Col>
+            </Col> */}
           </section>
           <section className="section section-lg section-coins">
             <img

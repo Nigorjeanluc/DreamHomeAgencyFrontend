@@ -26,8 +26,8 @@ import {
   CardFooter,
   CardImg,
   CardTitle,
-  Label,
-  FormGroup,
+//   Label,
+//   FormGroup,
   Form,
   Input,
   InputGroupAddon,
@@ -42,7 +42,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
-class RegisterPage extends React.Component {
+class LoginPage extends React.Component {
   state = {
     squares1to6: "",
     squares7and8: ""
@@ -85,8 +85,10 @@ class RegisterPage extends React.Component {
             <div className="page-header-image" />
             <div className="content">
               <Container>
-                <Row>
-                  <Col className="offset-lg-3 offset-md-3" lg="6" md="6">
+                <Row
+                  style={{margin: '0', padding: '0'}}
+                >
+                  <Col className="offset-lg-3 offset-dm-3" lg="6" md="6">
                     <div
                       className="square square-7"
                       id="square7"
@@ -101,33 +103,12 @@ class RegisterPage extends React.Component {
                       <CardHeader>
                         <CardImg
                           alt="..."
-                          src={require("assets/img/square1.png")}
+                          src={require("assets/img/square2.png")}
                         />
-                        <CardTitle tag="h4" style={{color: 'white'}}>Sign Up</CardTitle>
+                        <CardTitle tag="h4" style={{color: 'white'}}>Login</CardTitle>
                       </CardHeader>
                       <CardBody>
                         <Form className="form">
-                          <InputGroup
-                            className={classnames({
-                              "input-group-focus": this.state.fullNameFocus
-                            })}
-                          >
-                            <InputGroupAddon addonType="prepend">
-                              <InputGroupText>
-                                <i className="tim-icons icon-single-02" />
-                              </InputGroupText>
-                            </InputGroupAddon>
-                            <Input
-                              placeholder="Full Name"
-                              type="text"
-                              onFocus={e =>
-                                this.setState({ fullNameFocus: true })
-                              }
-                              onBlur={e =>
-                                this.setState({ fullNameFocus: false })
-                              }
-                            />
-                          </InputGroup>
                           <InputGroup
                             className={classnames({
                               "input-group-focus": this.state.emailFocus
@@ -144,24 +125,6 @@ class RegisterPage extends React.Component {
                               type="text"
                               onFocus={e => this.setState({ emailFocus: true })}
                               onBlur={e => this.setState({ emailFocus: false })}
-                            />
-                          </InputGroup>
-                          <InputGroup
-                            className={classnames({
-                              "input-group-focus": this.state.phoneFocus
-                            })}
-                          >
-                            <InputGroupAddon addonType="prepend">
-                              <InputGroupText>
-                                <i style={{color: 'white'}} className="tim-icons icon-mobile" />
-                              </InputGroupText>
-                            </InputGroupAddon>
-                            <Input
-                              placeholder="Phone"
-                              type="text"
-                              style={{color: 'white'}}
-                              onFocus={e => this.setState({ phoneFocus: true })}
-                              onBlur={e => this.setState({ phoneFocus: false })}
                             />
                           </InputGroup>
                           <InputGroup
@@ -185,24 +148,11 @@ class RegisterPage extends React.Component {
                               }
                             />
                           </InputGroup>
-                          <FormGroup check className="text-left">
-                            <Label check>
-                              <Input type="checkbox" />
-                              <span className="form-check-sign" />I agree to the{" "}
-                              <a
-                                href="#pablo"
-                                onClick={e => e.preventDefault()}
-                              >
-                                terms and conditions
-                              </a>
-                              .
-                            </Label>
-                          </FormGroup>
                         </Form>
                       </CardBody>
                       <CardFooter>
-                        <Button className="btn-round btn-block" color="success" size="lg">
-                          Get Started
+                        <Button className="btn-round btn-block" color="default" size="lg">
+                          Submit
                         </Button>
                       </CardFooter>
                     </Card>
@@ -249,4 +199,4 @@ class RegisterPage extends React.Component {
   }
 }
 
-export default RegisterPage;
+export default LoginPage;

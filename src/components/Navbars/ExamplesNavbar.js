@@ -216,7 +216,7 @@ class PagesNavbar extends React.Component {
               <NavItem>
                 <Button
                   className="nav-link d-none d-lg-block"
-                  color="primary"
+                  color="success"
                   // target="_blank"
                   href="/register-page"
                 >
@@ -227,8 +227,8 @@ class PagesNavbar extends React.Component {
                 <Button
                   className="nav-link d-none d-lg-block"
                   color="default"
-                  target="_blank"
-                  href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-examples-navbar-upgrade-pro"
+                  // target="_blank"
+                  href="/login-page"
                 >
                   <i className="tim-icons icon-single-02" /> Login
                 </Button>
