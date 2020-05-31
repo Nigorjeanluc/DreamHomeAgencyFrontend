@@ -116,3 +116,19 @@ $asset-base-path: '../../../../assets' !default;
 // React Differences
 
 @import "blk-design-system-react/react/react-differences";
+
+.containerImg {
+    position: relative;
+    .bottomleft {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-size: 18px;
+        color: 'white'
+    }
+      
+    img { 
+        width: 100%;
+        height: auto;
+    }
+}

@@ -20,6 +20,7 @@ import React from "react";
 // import { Line } from "react-chartjs-2";
 // reactstrap components
 import {
+  Badge,
   Button,
   Card,
   CardHeader,
@@ -30,7 +31,9 @@ import {
   ListGroup,
   Container,
   Row,
-  Col
+  Col,
+  UncontrolledCarousel,
+  UncontrolledTooltip
 } from "reactstrap";
 
 // core components
@@ -38,6 +41,24 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 // import bigChartData from "variables/charts.js";
+
+const carouselItems = [
+  {
+    src: require("assets/img/denys.jpg"),
+    altText: "Slide 1",
+    caption: ""
+  },
+  {
+    src: require("assets/img/fabien-bazanegue.jpg"),
+    altText: "Slide 2",
+    caption: ""
+  },
+  {
+    src: require("assets/img/mark-finn.jpg"),
+    altText: "Slide 3",
+    caption: ""
+  }
+];
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -135,7 +156,7 @@ class LandingPage extends React.Component {
                     </div>
                   </div>
                 </Col>
-                <Col lg="4" md="5">
+                <Col lg="6" md="5">
                   <Row>
                     <img
                       alt="..."
@@ -147,6 +168,37 @@ class LandingPage extends React.Component {
               </Row>
             </div>
           </div>
+          <div className="section">
+            <Container>
+              {/* <div className="title">
+                <h3>Carousel</h3>
+              </div> */}
+              <Row className="justify-content-between align-items-center">
+                <Col className="mb-5 mb-lg-0" lg="5">
+                  <h1 className="text-white font-weight-light">
+                    Large variety of properties
+                  </h1>
+                  <p className="text-white mt-4">
+                    We've got places from suites to warehouses
+                  </p>
+                  <Button
+                    className="mt-4"
+                    color="warning"
+                    href="#properties"
+                  >
+                    See all properties
+                  </Button>
+                </Col>
+                <Col lg="6">
+                  <UncontrolledCarousel
+                    items={carouselItems}
+                    indicators={true}
+                    autoPlay={true}
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </div>
           <section className="section section-lg">
             <section className="section">
               <img
@@ -155,6 +207,15 @@ class LandingPage extends React.Component {
                 src={require("assets/img/path4.png")}
               />
               <Container>
+                <Row>
+                  <Col md="4">
+                    <hr className="line-info" />
+                    <h1>
+                      Choose the place{" "}
+                      <span className="text-info">that fits your needs</span>
+                    </h1>
+                  </Col>
+                </Row>
                 <Row className="row-grid justify-content-between">
                   <Col className="mt-lg-5" md="5">
                     <Row>
@@ -164,14 +225,14 @@ class LandingPage extends React.Component {
                             <Row>
                               <Col md="4" xs="5">
                                 <div className="icon-big text-center icon-warning">
-                                  <i className="tim-icons icon-trophy text-warning" />
+                                  <i className="tim-icons icon-chart-bar-32 text-warning" />
                                 </div>
                               </Col>
                               <Col md="8" xs="7">
                                 <div className="numbers">
                                   <CardTitle tag="p">3,237</CardTitle>
                                   <p />
-                                  <p className="card-category">Awards</p>
+                                  <p className="card-category">Apartments</p>
                                 </div>
                               </Col>
                             </Row>
@@ -184,14 +245,14 @@ class LandingPage extends React.Component {
                             <Row>
                               <Col md="4" xs="5">
                                 <div className="icon-big text-center icon-warning">
-                                  <i className="tim-icons icon-coins text-white" />
+                                  <i className="tim-icons icon-bank text-white" />
                                 </div>
                               </Col>
                               <Col md="8" xs="7">
                                 <div className="numbers">
                                   <CardTitle tag="p">3,653</CardTitle>
                                   <p />
-                                  <p className="card-category">Commits</p>
+                                  <p className="card-category">Villas</p>
                                 </div>
                               </Col>
                             </Row>
@@ -213,7 +274,7 @@ class LandingPage extends React.Component {
                                 <div className="numbers">
                                   <CardTitle tag="p">593</CardTitle>
                                   <p />
-                                  <p className="card-category">Presents</p>
+                                  <p className="card-category">Cottage House</p>
                                 </div>
                               </Col>
                             </Row>
@@ -226,14 +287,14 @@ class LandingPage extends React.Component {
                             <Row>
                               <Col md="4" xs="5">
                                 <div className="icon-big text-center icon-warning">
-                                  <i className="tim-icons icon-credit-card text-success" />
+                                  <i className="tim-icons icon-istanbul text-success" />
                                 </div>
                               </Col>
                               <Col md="8" xs="7">
                                 <div className="numbers">
                                   <CardTitle tag="p">10,783</CardTitle>
                                   <p />
-                                  <p className="card-category">Forks</p>
+                                  <p className="card-category">Family House</p>
                                 </div>
                               </Col>
                             </Row>
@@ -245,25 +306,20 @@ class LandingPage extends React.Component {
                   <Col md="6">
                     <div className="pl-md-5">
                       <h1>
-                        Large <br />
-                        Apartments
+                        Large range<br />
+                        of choices
                       </h1>
                       <p>
-                        I should be capable of drawing a single stroke at the
-                        present moment; and yet I feel that I never was a
-                        greater artist than now.
+                        We offer you thousands of nice places, and at reasonable price
                       </p>
                       <br />
                       <p>
-                        When, while the lovely valley teems with vapour around
-                        me, and the meridian sun strikes the upper surface of
-                        the impenetrable foliage of my trees, and but a few
-                        stray.
+                        You are at the right place to choose a place that fit your needs.
                       </p>
                       <br />
                       <a
                         className="font-weight-bold text-info mt-5"
-                        href="#pablo"
+                        href="#something"
                         onClick={e => e.preventDefault()}
                       >
                         Show all{" "}
@@ -275,75 +331,7 @@ class LandingPage extends React.Component {
               </Container>
             </section>
           </section>
-          <section className="section section-lg">
-            <img
-              alt="..."
-              className="path"
-              src={require("assets/img/path4.png")}
-            />
-            <img
-              alt="..."
-              className="path2"
-              src={require("assets/img/path5.png")}
-            />
-            <img
-              alt="..."
-              className="path3"
-              src={require("assets/img/path2.png")}
-            />
-            <Container>
-              <Row className="justify-content-center">
-                <Col lg="12">
-                  <h1 className="text-center">Your best benefit</h1>
-                  <Row className="row-grid justify-content-center">
-                    <Col lg="3">
-                      <div className="info">
-                        <div className="icon icon-primary">
-                          <i className="tim-icons icon-money-coins" />
-                        </div>
-                        <h4 className="info-title">Low Commission</h4>
-                        <hr className="line-primary" />
-                        <p>
-                          Divide details about your work into parts. Write a few
-                          lines about each one. A paragraph describing a feature
-                          will.
-                        </p>
-                      </div>
-                    </Col>
-                    <Col lg="3">
-                      <div className="info">
-                        <div className="icon icon-warning">
-                          <i className="tim-icons icon-chart-pie-36" />
-                        </div>
-                        <h4 className="info-title">High Incomes</h4>
-                        <hr className="line-warning" />
-                        <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing feature will be a feature.
-                        </p>
-                      </div>
-                    </Col>
-                    <Col lg="3">
-                      <div className="info">
-                        <div className="icon icon-success">
-                          <i className="tim-icons icon-single-02" />
-                        </div>
-                        <h4 className="info-title">Verified People</h4>
-                        <hr className="line-success" />
-                        <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing be enough.
-                        </p>
-                      </div>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-          <section className="section section-lg section-safe">
+          {/* <section className="section section-lg section-safe">
             <img
               alt="..."
               className="path"
@@ -435,8 +423,8 @@ class LandingPage extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <section className="section section-lg">
+          </section> */}
+          {/* <section className="section section-lg">
             <img
               alt="..."
               className="path"
@@ -447,7 +435,7 @@ class LandingPage extends React.Component {
               className="path2"
               src={require("assets/img/path2.png")}
             />
-            {/* <Col md="12">
+            <Col md="12">
               <Card className="card-chart card-plain">
                 <CardHeader>
                   <Row>
@@ -467,117 +455,657 @@ class LandingPage extends React.Component {
                   </div>
                 </CardBody>
               </Card>
-            </Col> */}
-          </section>
+            </Col>
+          </section> */}
           <section className="section section-lg section-coins">
-            <img
+            {/* <img
               alt="..."
               className="path"
               src={require("assets/img/path3.png")}
-            />
+            /> */}
             <Container>
+              <div className="title">
+                <h2>Properties</h2>
+              </div>
               <Row>
-                <Col md="4">
-                  <hr className="line-info" />
-                  <h1>
-                    Choose the coin{" "}
-                    <span className="text-info">that fits your needs</span>
-                  </h1>
-                </Col>
-              </Row>
-              <Row>
-                <Col md="4">
-                  <Card className="card-coin card-plain">
-                    <CardHeader>
-                      <img
-                        alt="..."
-                        className="img-center img-fluid"
-                        src={require("assets/img/bitcoin.png")}
-                      />
-                    </CardHeader>
+              <Col md="4">
+                  <Card>
                     <CardBody>
                       <Row>
-                        <Col className="text-center" md="12">
-                          <h4 className="text-uppercase">Light Coin</h4>
-                          <span>Plan</span>
-                          <hr className="line-primary" />
+                        <Col md="12">
+                          <div style={{position: 'relative'}}>
+                            <img
+                              alt="..."
+                              // className="img-center img-fluid"
+                              style={{width: '100%', height: 'auto'}}
+                              src={require("assets/img/denys.jpg")}
+                            />
+                            <div
+                              style={{
+                                position: 'absolute',
+                                top: '8px',
+                                left: '16px'
+                              }}
+                            >
+                              <Badge className="badge-default">For rent</Badge>
+                              <Badge className="badge-success">Furnished</Badge>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                left: '16px',
+                                color: 'white',
+                                padding: '0 5px',
+                                background: 'rgba(12, 23, 23, 0.8)'
+                              }}
+                            >
+                              <span className="text-uppercase">$600/Per month</span>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                right: '16px'
+                              }}
+                            >
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048349"
+                              >
+                                <i className="tim-icons icon-camera-18" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048349"
+                              >
+                                <span>(4) pictures</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048346"
+                              >
+                                <i className="tim-icons icon-simple-add" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048346"
+                              >
+                                <span>Compare</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048347"
+                              >
+                                <i className="tim-icons icon-cart" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048347"
+                              >
+                                <span>Book place</span>
+                              </UncontrolledTooltip>
+                            </div>
+                          </div>
                         </Col>
-                      </Row>
-                      <Row>
-                        <ListGroup>
-                          <ListGroupItem>50 messages</ListGroupItem>
-                          <ListGroupItem>100 emails</ListGroupItem>
-                          <ListGroupItem>24/7 Support</ListGroupItem>
-                        </ListGroup>
+                        <Col className="text-center" md="12">
+                          <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                          <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                          <h6>Bedrooms: 3, Baths: 2</h6>
+                          <Badge className="badge-danger">Apartment</Badge>
+                        </Col>
                       </Row>
                     </CardBody>
                     <CardFooter className="text-center">
-                      <Button className="btn-simple" color="primary">
-                        Get plan
+                      <Button className="btn-simple btn-block" color="info">
+                        Details
                       </Button>
                     </CardFooter>
                   </Card>
                 </Col>
                 <Col md="4">
-                  <Card className="card-coin card-plain">
-                    <CardHeader>
-                      <img
-                        alt="..."
-                        className="img-center img-fluid"
-                        src={require("assets/img/etherum.png")}
-                      />
-                    </CardHeader>
+                  <Card>
                     <CardBody>
                       <Row>
-                        <Col className="text-center" md="12">
-                          <h4 className="text-uppercase">Dark Coin</h4>
-                          <span>Plan</span>
-                          <hr className="line-success" />
+                        <Col md="12">
+                          <div style={{position: 'relative'}}>
+                            <img
+                              alt="..."
+                              // className="img-center img-fluid"
+                              style={{width: '100%', height: 'auto'}}
+                              src={require("assets/img/denys.jpg")}
+                            />
+                            <div
+                              style={{
+                                position: 'absolute',
+                                top: '8px',
+                                left: '16px'
+                              }}
+                            >
+                              <Badge className="badge-default">For rent</Badge>
+                              <Badge className="badge-success">Furnished</Badge>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                left: '16px',
+                                color: 'white',
+                                padding: '0 5px',
+                                background: 'rgba(12, 23, 23, 0.8)'
+                              }}
+                            >
+                              <span className="text-uppercase">$600/Per month</span>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                right: '16px'
+                              }}
+                            >
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048349"
+                              >
+                                <i className="tim-icons icon-camera-18" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048349"
+                              >
+                                <span>(4) pictures</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048346"
+                              >
+                                <i className="tim-icons icon-simple-add" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048346"
+                              >
+                                <span>Compare</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048347"
+                              >
+                                <i className="tim-icons icon-cart" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048347"
+                              >
+                                <span>Book place</span>
+                              </UncontrolledTooltip>
+                            </div>
+                          </div>
                         </Col>
-                      </Row>
-                      <Row>
-                        <ListGroup>
-                          <ListGroupItem>150 messages</ListGroupItem>
-                          <ListGroupItem>1000 emails</ListGroupItem>
-                          <ListGroupItem>24/7 Support</ListGroupItem>
-                        </ListGroup>
+                        <Col className="text-center" md="12">
+                          <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                          <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                          <h6>Bedrooms: 3, Baths: 2</h6>
+                          <Badge className="badge-danger">Apartment</Badge>
+                        </Col>
                       </Row>
                     </CardBody>
                     <CardFooter className="text-center">
-                      <Button className="btn-simple" color="success">
-                        Get plan
+                      <Button className="btn-simple btn-block" color="info">
+                        Details
                       </Button>
                     </CardFooter>
                   </Card>
                 </Col>
                 <Col md="4">
-                  <Card className="card-coin card-plain">
-                    <CardHeader>
-                      <img
-                        alt="..."
-                        className="img-center img-fluid"
-                        src={require("assets/img/ripp.png")}
-                      />
-                    </CardHeader>
+                  <Card>
                     <CardBody>
                       <Row>
-                        <Col className="text-center" md="12">
-                          <h4 className="text-uppercase">Bright Coin</h4>
-                          <span>Plan</span>
-                          <hr className="line-info" />
+                        <Col md="12">
+                          <div style={{position: 'relative'}}>
+                            <img
+                              alt="..."
+                              // className="img-center img-fluid"
+                              style={{width: '100%', height: 'auto'}}
+                              src={require("assets/img/denys.jpg")}
+                            />
+                            <div
+                              style={{
+                                position: 'absolute',
+                                top: '8px',
+                                left: '16px'
+                              }}
+                            >
+                              <Badge className="badge-default">For rent</Badge>
+                              <Badge className="badge-success">Furnished</Badge>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                left: '16px',
+                                color: 'white',
+                                padding: '0 5px',
+                                background: 'rgba(12, 23, 23, 0.8)'
+                              }}
+                            >
+                              <span className="text-uppercase">$600/Per month</span>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                right: '16px'
+                              }}
+                            >
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048349"
+                              >
+                                <i className="tim-icons icon-camera-18" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048349"
+                              >
+                                <span>(4) pictures</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048346"
+                              >
+                                <i className="tim-icons icon-simple-add" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048346"
+                              >
+                                <span>Compare</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048347"
+                              >
+                                <i className="tim-icons icon-cart" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048347"
+                              >
+                                <span>Book place</span>
+                              </UncontrolledTooltip>
+                            </div>
+                          </div>
                         </Col>
-                      </Row>
-                      <Row>
-                        <ListGroup>
-                          <ListGroupItem>350 messages</ListGroupItem>
-                          <ListGroupItem>10K emails</ListGroupItem>
-                          <ListGroupItem>24/7 Support</ListGroupItem>
-                        </ListGroup>
+                        <Col className="text-center" md="12">
+                          <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                          <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                          <h6>Bedrooms: 3, Baths: 2</h6>
+                          <Badge className="badge-danger">Apartment</Badge>
+                        </Col>
                       </Row>
                     </CardBody>
                     <CardFooter className="text-center">
-                      <Button className="btn-simple" color="info">
-                        Get plan
+                      <Button className="btn-simple btn-block" color="info">
+                        Details
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </Col>
+                <Col md="4">
+                  <Card>
+                    <CardBody>
+                      <Row>
+                        <Col md="12">
+                          <div style={{position: 'relative'}}>
+                            <img
+                              alt="..."
+                              // className="img-center img-fluid"
+                              style={{width: '100%', height: 'auto'}}
+                              src={require("assets/img/denys.jpg")}
+                            />
+                            <div
+                              style={{
+                                position: 'absolute',
+                                top: '8px',
+                                left: '16px'
+                              }}
+                            >
+                              <Badge className="badge-default">For rent</Badge>
+                              <Badge className="badge-success">Furnished</Badge>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                left: '16px',
+                                color: 'white',
+                                padding: '0 5px',
+                                background: 'rgba(12, 23, 23, 0.8)'
+                              }}
+                            >
+                              <span className="text-uppercase">$600/Per month</span>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                right: '16px'
+                              }}
+                            >
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048349"
+                              >
+                                <i className="tim-icons icon-camera-18" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048349"
+                              >
+                                <span>(4) pictures</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048346"
+                              >
+                                <i className="tim-icons icon-simple-add" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048346"
+                              >
+                                <span>Compare</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048347"
+                              >
+                                <i className="tim-icons icon-cart" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048347"
+                              >
+                                <span>Book place</span>
+                              </UncontrolledTooltip>
+                            </div>
+                          </div>
+                        </Col>
+                        <Col className="text-center" md="12">
+                          <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                          <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                          <h6>Bedrooms: 3, Baths: 2</h6>
+                          <Badge className="badge-danger">Apartment</Badge>
+                        </Col>
+                      </Row>
+                    </CardBody>
+                    <CardFooter className="text-center">
+                      <Button className="btn-simple btn-block" color="info">
+                        Details
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </Col>
+                <Col md="4">
+                  <Card>
+                    <CardBody>
+                      <Row>
+                        <Col md="12">
+                          <div style={{position: 'relative'}}>
+                            <img
+                              alt="..."
+                              // className="img-center img-fluid"
+                              style={{width: '100%', height: 'auto'}}
+                              src={require("assets/img/denys.jpg")}
+                            />
+                            <div
+                              style={{
+                                position: 'absolute',
+                                top: '8px',
+                                left: '16px'
+                              }}
+                            >
+                              <Badge className="badge-default">For rent</Badge>
+                              <Badge className="badge-success">Furnished</Badge>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                left: '16px',
+                                color: 'white',
+                                padding: '0 5px',
+                                background: 'rgba(12, 23, 23, 0.8)'
+                              }}
+                            >
+                              <span className="text-uppercase">$600/Per month</span>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                right: '16px'
+                              }}
+                            >
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048349"
+                              >
+                                <i className="tim-icons icon-camera-18" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048349"
+                              >
+                                <span>(4) pictures</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048346"
+                              >
+                                <i className="tim-icons icon-simple-add" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048346"
+                              >
+                                <span>Compare</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048347"
+                              >
+                                <i className="tim-icons icon-cart" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048347"
+                              >
+                                <span>Book place</span>
+                              </UncontrolledTooltip>
+                            </div>
+                          </div>
+                        </Col>
+                        <Col className="text-center" md="12">
+                          <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                          <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                          <h6>Bedrooms: 3, Baths: 2</h6>
+                          <Badge className="badge-danger">Apartment</Badge>
+                        </Col>
+                      </Row>
+                    </CardBody>
+                    <CardFooter className="text-center">
+                      <Button className="btn-simple btn-block" color="info">
+                        Details
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                </Col>
+                <Col md="4">
+                  <Card>
+                    <CardBody>
+                      <Row>
+                        <Col md="12">
+                          <div style={{position: 'relative'}}>
+                            <img
+                              alt="..."
+                              // className="img-center img-fluid"
+                              style={{width: '100%', height: 'auto'}}
+                              src={require("assets/img/denys.jpg")}
+                            />
+                            <div
+                              style={{
+                                position: 'absolute',
+                                top: '8px',
+                                left: '16px'
+                              }}
+                            >
+                              <Badge className="badge-default">For rent</Badge>
+                              <Badge className="badge-success">Furnished</Badge>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                left: '16px',
+                                color: 'white',
+                                padding: '0 5px',
+                                background: 'rgba(12, 23, 23, 0.8)'
+                              }}
+                            >
+                              <span className="text-uppercase">$600/Per month</span>
+                            </div>
+                            <div
+                              style={{
+                                position: 'absolute',
+                                bottom: '8px',
+                                right: '16px'
+                              }}
+                            >
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048349"
+                              >
+                                <i className="tim-icons icon-camera-18" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048349"
+                              >
+                                <span>(4) pictures</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048346"
+                              >
+                                <i className="tim-icons icon-simple-add" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048346"
+                              >
+                                <span>Compare</span>
+                              </UncontrolledTooltip>
+                              <Button
+                                className="btn-icon btn-round btn-sm"
+                                color="default"
+                                type="button"
+                                id="tooltip376048347"
+                              >
+                                <i className="tim-icons icon-cart" />
+                              </Button>
+                              <UncontrolledTooltip
+                                delay={0}
+                                color="default"
+                                placement="top"
+                                target="tooltip376048347"
+                              >
+                                <span>Book place</span>
+                              </UncontrolledTooltip>
+                            </div>
+                          </div>
+                        </Col>
+                        <Col className="text-center" md="12">
+                          <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                          <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                          <h6>Bedrooms: 3, Baths: 2</h6>
+                          <Badge className="badge-danger">Apartment</Badge>
+                        </Col>
+                      </Row>
+                    </CardBody>
+                    <CardFooter className="text-center">
+                      <Button className="btn-simple btn-block" color="info">
+                        Details
                       </Button>
                     </CardFooter>
                   </Card>
