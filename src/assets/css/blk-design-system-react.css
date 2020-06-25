@@ -8735,7 +8735,7 @@ fieldset[disabled]
 .footer {
   padding: 50px 0;
   border-top: 2px solid #435DB5;
-  background: radial-gradient(ellipse at bottom, #292D61 30%, #171941 80%); }
+  background: radial-gradient(ellipse at bottom, #2125295e 30%, #171941 80%); }
   .footer [class*="container-"] {
     padding: 0; }
   .footer .nav {
@@ -11713,7 +11713,7 @@ textarea.form-control {
 .landing-page {
   overflow-x: hidden; }
   .landing-page .page-header::after {
-    background: radial-gradient(ellipse at top right, #292D61 23%, #171941 65%);
+    background: radial-gradient(ellipse at top right, #2125295e 23%, #171941 65%);
     position: absolute;
     height: 100vh;
     width: 100%;

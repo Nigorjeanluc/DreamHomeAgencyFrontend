@@ -27,7 +27,11 @@ import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
-import LoginPage from "views/examples/LoginPage.js";
+import About from "views/examples/About";
+import Blog from "views/examples/Blog.js";
+import Rent from "views/examples/Rent.js";
+import Sales from "views/examples/Sales.js";
+import Properties from "views/examples/Properties.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -42,12 +46,28 @@ ReactDOM.render(
         render={props => <RegisterPage {...props} />}
       />
       <Route
-        path="/login-page"
-        render={props => <LoginPage {...props} />}
-      />
-      <Route
         path="/profile-page"
         render={props => <ProfilePage {...props} />}
+      />
+      <Route
+        path="/about"
+        render={props => <About {...props} />}
+      />
+      <Route
+        path="/rent"
+        render={props => <Rent {...props} />}
+      />
+      <Route
+        path="/blog"
+        render={props => <Blog {...props} />}
+      />
+      <Route
+        path="/sales"
+        render={props => <Sales {...props} />}
+      />
+      <Route
+        path="/properties"
+        render={props => <Properties {...props} />}
       />
       <Redirect from="/" to="/landing-page" />
     </Switch>

@@ -49,7 +49,7 @@ import Footer from "components/Footer/Footer.js";
 
 const carouselItems = [
   {
-    src: require("assets/img/denys.jpg"),
+    src: require("assets/img/denys.jfif"),
     altText: "Slide 1",
     caption: "Big City Life, United States"
   },
@@ -59,7 +59,7 @@ const carouselItems = [
     caption: "Somewhere Beyond, United States"
   },
   {
-    src: require("assets/img/mark-finn.jpg"),
+    src: require("assets/img/mark-finn.jpeg"),
     altText: "Slide 3",
     caption: "Stocks, United States"
   }

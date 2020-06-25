@@ -116,7 +116,7 @@ class PagesNavbar extends React.Component {
               Agency
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              Designed and Coded by Creative Tim
+              Designed and Coded by GammaGeeks Ltd.
             </UncontrolledTooltip>
             <button
               aria-expanded={this.state.collapseOpen}
