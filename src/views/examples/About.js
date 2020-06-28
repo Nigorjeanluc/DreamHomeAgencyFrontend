@@ -97,7 +97,7 @@ class Index extends React.Component {
                                     <label>Email address</label>
                                     <Input
                                         placeholder="mike@email.com"
-                                        type="email"
+                                        type="email" style={{color: 'white'}}
                                     />
                                     </FormGroup>
                                 </Col>
@@ -165,8 +165,9 @@ class Index extends React.Component {
                             <div className="description">
                             <h4 className="info-title">Give us a ring</h4>
                             <p>
-                                Siborurema <br />
-                                +250 789 660 036 <br />
+                                Dream Home Agency <br />
+                                +250 787777777<br />
+                                agency@dreamhomeagency.com<br />
                                 Mon - Fri, 8:00-22:00
                             </p>
                             </div>

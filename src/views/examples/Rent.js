@@ -88,6 +88,7 @@ class Index extends React.Component {
                     <Col sm="3" xs="12">
                         <Card>
                             <CardBody>
+                                <h4>Refine your search</h4>
                                 <Form>
                                     <h6>Select a city</h6>
                                     <FormGroup>
@@ -100,54 +101,58 @@ class Index extends React.Component {
                                             <option style={{color: 'black'}}>Rusizi</option>
                                         </Input>
                                     </FormGroup>
-                                    <h6>Select a city</h6>
+                                    <h6>Select a type</h6>
                                     <FormGroup>
-                                        <Input className="has-success" type="select" placeholder="Select a city" name="select" id="exampleSelect">
-                                            <option style={{color: 'black'}}>Kigali</option>
-                                            <option style={{color: 'black'}}>Huye</option>
-                                            <option style={{color: 'black'}}>Muhanga</option>
-                                            <option style={{color: 'black'}}>Musanze</option>
-                                            <option style={{color: 'black'}}>Rubavu</option>
-                                            <option style={{color: 'black'}}>Rusizi</option>
+                                        <Input className="has-success" type="select" placeholder="All types" name="select" id="exampleSelect">
+                                            <option style={{color: 'black'}}>Apartments</option>
+                                            <option style={{color: 'black'}}>Houses</option>
+                                            <option style={{color: 'black'}}>Offices</option>
+                                            <option style={{color: 'black'}}>Land</option>
+                                            <option style={{color: 'black'}}>Retail Spaces</option>
+                                            <option style={{color: 'black'}}>Investment Opportunities</option>
                                         </Input>
                                     </FormGroup>
                                     <Row>
                                         <Col md="6">
-                                            <h6>Select a city</h6>
+                                            <h6>Bedrooms</h6>
                                             <FormGroup>
-                                                <Input className="has-success" type="select" placeholder="Select a city" name="select" id="exampleSelect">
-                                                    <option style={{color: 'black'}}>Kigali</option>
-                                                    <option style={{color: 'black'}}>Huye</option>
-                                                    <option style={{color: 'black'}}>Muhanga</option>
-                                                    <option style={{color: 'black'}}>Musanze</option>
-                                                    <option style={{color: 'black'}}>Rubavu</option>
-                                                    <option style={{color: 'black'}}>Rusizi</option>
+                                                <Input className="has-success" type="select" placeholder="Bedrooms" name="select" id="exampleSelect">
+                                                    <option style={{color: 'black'}}>1</option>
+                                                    <option style={{color: 'black'}}>2</option>
+                                                    <option style={{color: 'black'}}>3</option>
+                                                    <option style={{color: 'black'}}>4</option>
+                                                    <option style={{color: 'black'}}>5</option>
+                                                    <option style={{color: 'black'}}>6</option>
                                                 </Input>
                                             </FormGroup>
                                         </Col>
                                         <Col md="6">
-                                            <h6>Select a city</h6>
+                                            <h6>Bathrooms</h6>
                                             <FormGroup>
-                                                <Input className="has-success" type="select" placeholder="Select a city" name="select" id="exampleSelect">
-                                                    <option style={{color: 'black'}}>Kigali</option>
-                                                    <option style={{color: 'black'}}>Huye</option>
-                                                    <option style={{color: 'black'}}>Muhanga</option>
-                                                    <option style={{color: 'black'}}>Musanze</option>
-                                                    <option style={{color: 'black'}}>Rubavu</option>
-                                                    <option style={{color: 'black'}}>Rusizi</option>
+                                                <Input className="has-success" type="select" placeholder="Bathrooms" name="select" id="exampleSelect">
+                                                    <option style={{color: 'black'}}>1</option>
+                                                    <option style={{color: 'black'}}>2</option>
+                                                    <option style={{color: 'black'}}>3</option>
+                                                    <option style={{color: 'black'}}>4</option>
+                                                    <option style={{color: 'black'}}>5</option>
+                                                    <option style={{color: 'black'}}>6</option>
                                                 </Input>
                                             </FormGroup>
                                         </Col>
                                     </Row>
                                     <Button className="btn btn-sm btn-block" color="success">
-                                        <span>
-                                            <FontAwesome 
-                                                    className="super-crazy-colors"
-                                                    name="search"
-                                                    size="2x"
-                                                    style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-                                            />
-                                            Search
+                                        <span style={{display: 'inline'}}>
+                                            <span>
+                                                Search
+                                                <span style={{float: 'right'}}>
+                                                    <FontAwesome 
+                                                        className="super-crazy-colors"
+                                                        name="search"
+                                                        size="1x"
+                                                        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+                                                    />
+                                                </span>
+                                            </span>
                                         </span>
                                     </Button>
                                 </Form>

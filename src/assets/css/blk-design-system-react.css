@@ -1348,7 +1348,8 @@ pre {
     outline: 0;
     box-shadow: none, none; }
   .form-control::placeholder {
-    color: #adb5bd;
+    color: #ffffff;
+    background-color: white;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -15566,3 +15567,6 @@ td.rdtYear:hover {
     color: #1d8cf8; }
 
 /*# sourceMappingURL=blk-design-system-react.css.map */
+::placeholder {
+  color: blue;
+}
