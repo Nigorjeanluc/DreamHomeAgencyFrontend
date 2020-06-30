@@ -734,7 +734,7 @@ class Index extends React.Component {
                             </Col>
                         </Row>
                     </Col>
-                    <Col sm="3" xs="12">
+                    <Col md="3" sm="6" xs="12">
                         <Card>
                             <CardBody>
                                 <h4>Refine your search</h4>

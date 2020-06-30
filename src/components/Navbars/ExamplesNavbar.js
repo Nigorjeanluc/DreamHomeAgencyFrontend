@@ -158,7 +158,7 @@ class PagesNavbar extends React.Component {
                 <DropdownMenu className="dropdown-with-icons">
                   <DropdownItem href="/sales">
                     <i className="tim-icons icon-paper" />
-                    Sales
+                    Sale
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/rent">
                     <i className="tim-icons icon-bullet-list-67" />

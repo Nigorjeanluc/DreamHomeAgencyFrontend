@@ -85,7 +85,7 @@ class Index extends React.Component {
                 <div className="text-center" id="images">
                 <h2 className="mb-5">Properties to sale</h2>
                 <Row>
-                    <Col sm="3" xs="12">
+                    <Col md="3" sm="6" xs="12">
                         <Card>
                             <CardBody>
                                 <h4>Refine your search</h4>

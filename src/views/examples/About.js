@@ -131,7 +131,7 @@ class Index extends React.Component {
                                 id="tooltip341148792"
                                 type="button"
                                 >
-                                Send text
+                                Submit
                                 </Button>
                                 <UncontrolledTooltip
                                 delay={0}
@@ -152,8 +152,8 @@ class Index extends React.Component {
                             <div className="description">
                                 <h4 className="info-title">Find us at the office</h4>
                                 <p>
-                                    Avenue Paul VI, <br />
-                                    St 204 KN, <br />
+                                    Remera, <br />
+                                    kg 100 KN, <br />
                                     Kigali, Rwanda
                                 </p>
                             </div>
@@ -167,7 +167,7 @@ class Index extends React.Component {
                             <p>
                                 Dream Home Agency <br />
                                 +250 787777777<br />
-                                agency@dreamhomeagency.com<br />
+                                agency@dreamhomeagency.rw<br />
                                 Mon - Fri, 8:00-22:00
                             </p>
                             </div>
