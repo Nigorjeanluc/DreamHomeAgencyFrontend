@@ -85,7 +85,7 @@ class Index extends React.Component {
                 <div className="text-center" id="images">
                 <h2 className="mb-5">Properties to sale</h2>
                 <Row>
-                    <Col md="3" sm="6" xs="12">
+                    <Col sm="3" xs="12">
                         <Card>
                             <CardBody>
                                 <h4>Refine your search</h4>
@@ -160,9 +160,6 @@ class Index extends React.Component {
                         </Card>
                     </Col>
                     <Col sm="9" xs="12">
-                    {/* <div className="title">
-                        <h2>Properties</h2>
-                    </div> */}
                     <Row>
                         <Col md="6">
                             <Card>
@@ -174,7 +171,7 @@ class Index extends React.Component {
                                         alt="..."
                                         // className="img-center img-fluid"
                                         style={{width: '100%', height: 'auto'}}
-                                        src={require("assets/img/denys.jfif")}
+                                        src={require("assets/img/apt302/one.jpg")}
                                         />
                                         <div
                                         style={{
@@ -196,7 +193,6 @@ class Index extends React.Component {
                                             background: 'rgba(12, 23, 23, 0.8)'
                                         }}
                                         >
-                                        <span className="text-uppercase">$600/Per month</span>
                                         </div>
                                         <div
                                         style={{
@@ -281,7 +277,7 @@ class Index extends React.Component {
                                         alt="..."
                                         // className="img-center img-fluid"
                                         style={{width: '100%', height: 'auto'}}
-                                        src={require("assets/img/denys.jfif")}
+                                        src={require("assets/img/apt302/two.jpg")}
                                         />
                                         <div
                                         style={{
@@ -303,7 +299,6 @@ class Index extends React.Component {
                                             background: 'rgba(12, 23, 23, 0.8)'
                                         }}
                                         >
-                                        <span className="text-uppercase">$600/Per month</span>
                                         </div>
                                         <div
                                         style={{
@@ -388,7 +383,7 @@ class Index extends React.Component {
                                         alt="..."
                                         // className="img-center img-fluid"
                                         style={{width: '100%', height: 'auto'}}
-                                        src={require("assets/img/denys.jfif")}
+                                        src={require("assets/img/apt302/three.jpg")}
                                         />
                                         <div
                                         style={{
@@ -410,7 +405,6 @@ class Index extends React.Component {
                                             background: 'rgba(12, 23, 23, 0.8)'
                                         }}
                                         >
-                                        <span className="text-uppercase">$600/Per month</span>
                                         </div>
                                         <div
                                         style={{
@@ -495,7 +489,7 @@ class Index extends React.Component {
                                         alt="..."
                                         // className="img-center img-fluid"
                                         style={{width: '100%', height: 'auto'}}
-                                        src={require("assets/img/denys.jfif")}
+                                        src={require("assets/img/apt302/four.jpg")}
                                         />
                                         <div
                                         style={{
@@ -517,7 +511,6 @@ class Index extends React.Component {
                                             background: 'rgba(12, 23, 23, 0.8)'
                                         }}
                                         >
-                                        <span className="text-uppercase">$600/Per month</span>
                                         </div>
                                         <div
                                         style={{
@@ -602,7 +595,7 @@ class Index extends React.Component {
                                         alt="..."
                                         // className="img-center img-fluid"
                                         style={{width: '100%', height: 'auto'}}
-                                        src={require("assets/img/denys.jfif")}
+                                        src={require("assets/img/apt307/five.jpg")}
                                         />
                                         <div
                                         style={{
@@ -624,7 +617,6 @@ class Index extends React.Component {
                                             background: 'rgba(12, 23, 23, 0.8)'
                                         }}
                                         >
-                                        <span className="text-uppercase">$600/Per month</span>
                                         </div>
                                         <div
                                         style={{
@@ -709,7 +701,7 @@ class Index extends React.Component {
                                         alt="..."
                                         // className="img-center img-fluid"
                                         style={{width: '100%', height: 'auto'}}
-                                        src={require("assets/img/denys.jfif")}
+                                        src={require("assets/img/apt307/four.jpg")}
                                         />
                                         <div
                                         style={{
@@ -731,7 +723,6 @@ class Index extends React.Component {
                                             background: 'rgba(12, 23, 23, 0.8)'
                                         }}
                                         >
-                                        <span className="text-uppercase">$600/Per month</span>
                                         </div>
                                         <div
                                         style={{

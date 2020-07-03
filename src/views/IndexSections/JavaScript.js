@@ -86,7 +86,7 @@ class JavaScript extends React.Component {
           <h3 className="title mb-5">Javascript components</h3>
           <h4 className="mb-5">Modal</h4>
           <Row id="modals">
-            <Col md="4">
+            <Col md="4" sm="6" xs="12">
               <Button
                 color="primary"
                 onClick={() => this.toggleModal("demoModal")}
@@ -94,7 +94,7 @@ class JavaScript extends React.Component {
                 Launch Modal
               </Button>
             </Col>
-            <Col md="4">
+            <Col md="4" sm="6" xs="12">
               <Button
                 color="warning"
                 onClick={() => this.toggleModal("miniModal")}
@@ -102,7 +102,7 @@ class JavaScript extends React.Component {
                 Launch Modal Mini
               </Button>
             </Col>
-            <Col md="4">
+            <Col md="4" sm="6" xs="12">
               <Button
                 color="success"
                 onClick={() => this.toggleModal("formModal")}
@@ -283,7 +283,7 @@ class JavaScript extends React.Component {
           <br />
           <h4 className="mb-5 mt-3">Datepicker</h4>
           <Row>
-            <Col md="4">
+            <Col md="4" sm="6" xs="12">
               <div className="datepicker-container">
                 <FormGroup>
                   <ReactDatetime

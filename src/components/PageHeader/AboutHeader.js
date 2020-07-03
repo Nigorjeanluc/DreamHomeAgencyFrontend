@@ -35,8 +35,9 @@ class PageHeader extends React.Component {
           <div className="content-center brand">
             <h1 className="h1-seo">About• Us</h1>
             <h4 className="d-none d-sm-block">
-              Dream Home Agency is an organisation specialized in real estae and accommodations.
-              We help you to find places that fit all your needs.
+              Dream Home Agency  provides with the clients the very best in all aspects of residential real estates, 
+              whether we are handling their sale or purchase personally, 
+              connecting them to one of our associated property experts for particular services.
             </h4>
           </div>
         </Container>

@@ -96,7 +96,7 @@ class PagesNavbar extends React.Component {
               id="navbar-brand"
               tag={Link}
             >
-              <span>Dream Home Agency </span>
+              <span className="logoFont">Dream Home Agency </span>
               
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
@@ -137,7 +137,7 @@ class PagesNavbar extends React.Component {
                 </Col>
               </Row>
             </div>
-            <Nav navbar>
+            <Nav navbar className="navFonts">
               <NavItem>
                 <NavLink tag={Link} to="/">
                   Home

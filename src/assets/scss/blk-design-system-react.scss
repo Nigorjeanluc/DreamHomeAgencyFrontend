@@ -115,7 +115,7 @@ $asset-base-path: '../../../../assets' !default;
 
 // React Differences
 
-@import "blk-design-system-react/react/react-differences";
+@import "blk-design-system-react/react/react-differences";@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Poller+One&family=Monoton&family=Orbitron:wght@700&family=Pacifico&family=Parisienne&display=swap');
 
 .containerImg {
     position: relative;
@@ -131,4 +131,16 @@ $asset-base-path: '../../../../assets' !default;
         width: 100%;
         height: auto;
     }
+}
+
+.navFonts {
+    font-family: 'Pacifico';
+    font-size: large;
+    font-weight: 900;
+}
+
+.logoFont {
+    font-family: 'Poller One';
+    font-size: large;
+    font-weight: 900;
 }

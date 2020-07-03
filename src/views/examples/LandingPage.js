@@ -57,17 +57,17 @@ const items = [
 
 const carouselItems = [
   {
-    src: require("assets/img/denys.jfif"),
+    src: require("assets/img/apt602/one.jpg"),
     altText: "Slide 1",
     caption: ""
   },
   {
-    src: require("assets/img/fabien-bazanegue.jpg"),
+    src: require("assets/img/apt602/two.jpg"),
     altText: "Slide 2",
     caption: ""
   },
   {
-    src: require("assets/img/mark-finn.jpeg"),
+    src: require("assets/img/apt602/three.jpg"),
     altText: "Slide 3",
     caption: ""
   }
@@ -116,9 +116,71 @@ class LandingPage extends React.Component {
               className="shapes circle"
               src={require("assets/img/cercuri.png")}
             />
-            <div className="content-center">
+            <div>
               <Row className="row-grid justify-content-between align-items-center text-left">
-                <Col lg="6" md="6">
+                <div style={{
+                  position: 'relative',
+                  textAlign: 'center',
+                  color: 'white',
+                  width: '100%'
+                }}>
+                  <img style={{width: '100%', height: '100vh'}} src={require('assets/img/apt406/one.jpg')} alt="photo" />
+                  <div style={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                  }}>
+                    <h2 style={{
+                      fontSize: '48px',
+                      color: '#1e5457',
+                      fontWeight: 900,
+                      textShadow: '1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc',
+                      fontFamily: 'Holtwood One SC'
+                    }}>Dream home is always with you</h2>
+                    <p style={{
+                      fontSize: '30px',
+                      color: 'white',
+                      textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
+                      fontFamily: 'Pacifico'
+                    }}>Selecting an agent you can trust is the first step in achieving a successful sale-buying or renting.</p>
+                    <div className="space-50" />
+                    <Button
+                        className="btn-icon btn-simple btn-round btn-neutral fontSiz"
+                        color="default"
+                        href="#pablo"
+                        onClick={e => e.preventDefault()}
+                      >
+                        <i className="fab fa-twitter" />
+                      </Button>
+                      <Button
+                        className="btn-icon btn-simple btn-round btn-neutral fontSiz"
+                        color="default"
+                        href="https://www.instagram.com/dreamhomeagencykigali/"
+                        target="_blank"
+                        // onClick={e => e.preventDefault()}
+                      >
+                        <i className="fab fa-instagram" />
+                      </Button>
+                    <Button
+                      className="btn-icon btn-simple btn-round btn-neutral fontSiz"
+                      color="default"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fab fa-facebook" />
+                    </Button>
+                    <Button
+                      className="btn-icon btn-simple btn-round btn-neutral fontSiz"
+                      color="default"
+                      href="#pablo"
+                      onClick={e => e.preventDefault()}
+                    >
+                      <i className="fab fa-linkedin" />
+                    </Button>
+                  </div>
+                </div>
+                {/* <Col lg="6" md="6">
                   <h1 className="text-white">
                     Dream home is always with you
                   </h1>
@@ -177,17 +239,22 @@ class LandingPage extends React.Component {
                       src={require("assets/img/etherum.png")}
                     />
                   </Row>
-                </Col>
+                </Col> */}
               </Row>
             </div>
           </div>
-          <div className="section">
+          {/* <div className="section">
+            <Row>
+              
+            </Row>
+          </div> */}
+          {/* <div className="section">
             <UncontrolledCarousel
               items={carouselItems}
               indicators={true}
               autoPlay={true}
             />
-          </div>
+          </div> */}
           <div className="section">
             <Container>
               {/* <div className="title">
@@ -228,7 +295,7 @@ class LandingPage extends React.Component {
               />
               <Container>
                 <Row>
-                  <Col md="4">
+                  <Col md="4" sm="6" xs="12">
                     <hr className="line-info" />
                     <h1>
                       Choose the place{" "}
@@ -243,7 +310,7 @@ class LandingPage extends React.Component {
                         <Card className="card-stats">
                           <CardBody>
                             <Row>
-                              <Col md="4" xs="5">
+                              <Col md="4" sm="6" xs="12" xs="5">
                                 <div className="icon-big text-center icon-warning">
                                   <i className="tim-icons icon-chart-bar-32 text-warning" />
                                 </div>
@@ -263,7 +330,7 @@ class LandingPage extends React.Component {
                         <Card className="card-stats upper bg-default">
                           <CardBody>
                             <Row>
-                              <Col md="4" xs="5">
+                              <Col md="4" sm="6" xs="12" xs="5">
                                 <div className="icon-big text-center icon-warning">
                                   <i className="tim-icons icon-bank text-white" />
                                 </div>
@@ -285,7 +352,7 @@ class LandingPage extends React.Component {
                         <Card className="card-stats">
                           <CardBody>
                             <Row>
-                              <Col md="4" xs="5">
+                              <Col md="4" sm="6" xs="12" xs="5">
                                 <div className="icon-big text-center icon-warning">
                                   <i className="tim-icons icon-gift-2 text-info" />
                                 </div>
@@ -305,7 +372,7 @@ class LandingPage extends React.Component {
                         <Card className="card-stats">
                           <CardBody>
                             <Row>
-                              <Col md="4" xs="5">
+                              <Col md="4" sm="6" xs="12" xs="5">
                                 <div className="icon-big text-center icon-warning">
                                   <i className="tim-icons icon-istanbul text-success" />
                                 </div>
@@ -488,7 +555,7 @@ class LandingPage extends React.Component {
                 <h2>Properties</h2>
               </div>
               <Row>
-              <Col md="4">
+              <Col md="4" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -498,7 +565,7 @@ class LandingPage extends React.Component {
                               alt="..."
                               // className="img-center img-fluid"
                               style={{width: '100%', height: 'auto'}}
-                              src={require("assets/img/denys.jfif")}
+                              src={require("assets/img/exterior/one.jpg")}
                             />
                             <div
                               style={{
@@ -595,7 +662,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4">
+                <Col md="4" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -605,7 +672,7 @@ class LandingPage extends React.Component {
                               alt="..."
                               // className="img-center img-fluid"
                               style={{width: '100%', height: 'auto'}}
-                              src={require("assets/img/denys.jfif")}
+                              src={require("assets/img/exterior/two.jpg")}
                             />
                             <div
                               style={{
@@ -702,7 +769,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4">
+                <Col md="4" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -712,7 +779,7 @@ class LandingPage extends React.Component {
                               alt="..."
                               // className="img-center img-fluid"
                               style={{width: '100%', height: 'auto'}}
-                              src={require("assets/img/denys.jfif")}
+                              src={require("assets/img/exterior/three.jpg")}
                             />
                             <div
                               style={{
@@ -809,7 +876,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4">
+                <Col md="4" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -819,7 +886,7 @@ class LandingPage extends React.Component {
                               alt="..."
                               // className="img-center img-fluid"
                               style={{width: '100%', height: 'auto'}}
-                              src={require("assets/img/denys.jfif")}
+                              src={require("assets/img/exterior/four.jpg")}
                             />
                             <div
                               style={{
@@ -916,7 +983,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4">
+                <Col md="4" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -926,7 +993,7 @@ class LandingPage extends React.Component {
                               alt="..."
                               // className="img-center img-fluid"
                               style={{width: '100%', height: 'auto'}}
-                              src={require("assets/img/denys.jfif")}
+                              src={require("assets/img/exterior/two.jpg")}
                             />
                             <div
                               style={{
@@ -1023,7 +1090,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4">
+                <Col md="4" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -1033,7 +1100,7 @@ class LandingPage extends React.Component {
                               alt="..."
                               // className="img-center img-fluid"
                               style={{width: '100%', height: 'auto'}}
-                              src={require("assets/img/denys.jfif")}
+                              src={require("assets/img/exterior/two1.jpg")}
                             />
                             <div
                               style={{
@@ -1149,58 +1216,7 @@ class LandingPage extends React.Component {
               className="path3"
               src={require("assets/img/path2.png")}
             /> */}
-            <Container>
-              <Row className="justify-content-center">
-                <Col lg="12">
-                  <h1 className="text-center">Your best benefit</h1>
-                  <Row className="row-grid justify-content-center">
-                    <Col lg="3">
-                      <div className="info">
-                        <div className="icon icon-primary">
-                          <i className="tim-icons icon-money-coins" />
-                        </div>
-                        <h4 className="info-title">Low Commission</h4>
-                        <hr className="line-primary" />
-                        <p>
-                          Divide details about your work into parts. Write a few
-                          lines about each one. A paragraph describing a feature
-                          will.
-                        </p>
-                      </div>
-                    </Col>
-                    <Col lg="3">
-                      <div className="info">
-                        <div className="icon icon-warning">
-                          <i className="tim-icons icon-chart-pie-36" />
-                        </div>
-                        <h4 className="info-title">Nice places</h4>
-                        <hr className="line-warning" />
-                        <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing feature will be a feature.
-                        </p>
-                      </div>
-                    </Col>
-                    <Col lg="3">
-                      <div className="info">
-                        <div className="icon icon-success">
-                          <i className="tim-icons icon-single-02" />
-                        </div>
-                        <h4 className="info-title">Verified People</h4>
-                        <hr className="line-success" />
-                        <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing be enough.
-                        </p>
-                      </div>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </Container>
-          </section>
+            </section>
           <Footer />
         </div>
       </>
