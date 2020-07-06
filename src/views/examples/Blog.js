@@ -173,9 +173,302 @@ class Index extends React.Component {
                                     <h5>Location: Vision city, Gacuriro, Kigali</h5>
                                     <h6>Bedrooms: 3, Baths: 2</h6>
                                     <Badge className="badge-danger">Apartment</Badge>
-                                    <Button className="btn-simple btn-block" color="info">
-                                        Details
-                                    </Button>
+                                    <p>
+                                        <Button className="btn-simple btn-sm btn-block" color="info">
+                                            More
+                                        </Button>
+                                    </p>
+                                    </Col>
+                                </Row>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col md="12">
+                            <Card>
+                                <CardBody>
+                                <Row>
+                                    <Col md="4">
+                                    <div style={{position: 'relative'}}>
+                                        <img
+                                        alt="..."
+                                        // className="img-center img-fluid"
+                                        style={{width: '100%', height: 'auto'}}
+                                        src={require("assets/img/apt302/four.jpg")}
+                                        />
+                                        <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '8px',
+                                            left: '16px'
+                                        }}
+                                        >
+                                        <Badge className="badge-default">For rent</Badge>
+                                        <Badge className="badge-success">Furnished</Badge>
+                                        </div>
+                                        <div
+                                        style={{
+                                            position: 'absolute',
+                                            bottom: '8px',
+                                            right: '16px'
+                                        }}
+                                        >
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048349"
+                                        >
+                                            <i className="tim-icons icon-camera-18" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048349"
+                                        >
+                                            <span>(4) pictures</span>
+                                        </UncontrolledTooltip>
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048346"
+                                        >
+                                            <i className="tim-icons icon-simple-add" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048346"
+                                        >
+                                            <span>Compare</span>
+                                        </UncontrolledTooltip>
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048347"
+                                        >
+                                            <i className="tim-icons icon-cart" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048347"
+                                        >
+                                            <span>Book place</span>
+                                        </UncontrolledTooltip>
+                                        </div>
+                                    </div>
+                                    </Col>
+                                    <Col style={{
+                                        textAlign: 'left'
+                                    }} md="8">
+                                    <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                                    <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                                    <h6>Bedrooms: 3, Baths: 2</h6>
+                                    <Badge className="badge-danger">Apartment</Badge>
+                                    <p>
+                                        <Button className="btn-simple btn-sm btn-block" color="info">
+                                            More
+                                        </Button>
+                                    </p>
+                                    </Col>
+                                </Row>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col md="12">
+                            <Card>
+                                <CardBody>
+                                <Row>
+                                    <Col md="4">
+                                    <div style={{position: 'relative'}}>
+                                        <img
+                                        alt="..."
+                                        // className="img-center img-fluid"
+                                        style={{width: '100%', height: 'auto'}}
+                                        src={require("assets/img/apt302/four.jpg")}
+                                        />
+                                        <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '8px',
+                                            left: '16px'
+                                        }}
+                                        >
+                                        <Badge className="badge-default">For rent</Badge>
+                                        <Badge className="badge-success">Furnished</Badge>
+                                        </div>
+                                        <div
+                                        style={{
+                                            position: 'absolute',
+                                            bottom: '8px',
+                                            right: '16px'
+                                        }}
+                                        >
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048349"
+                                        >
+                                            <i className="tim-icons icon-camera-18" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048349"
+                                        >
+                                            <span>(4) pictures</span>
+                                        </UncontrolledTooltip>
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048346"
+                                        >
+                                            <i className="tim-icons icon-simple-add" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048346"
+                                        >
+                                            <span>Compare</span>
+                                        </UncontrolledTooltip>
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048347"
+                                        >
+                                            <i className="tim-icons icon-cart" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048347"
+                                        >
+                                            <span>Book place</span>
+                                        </UncontrolledTooltip>
+                                        </div>
+                                    </div>
+                                    </Col>
+                                    <Col style={{
+                                        textAlign: 'left'
+                                    }} md="8">
+                                    <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                                    <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                                    <h6>Bedrooms: 3, Baths: 2</h6>
+                                    <Badge className="badge-danger">Apartment</Badge>
+                                    <p>
+                                        <Button className="btn-simple btn-sm btn-block" color="info">
+                                            More
+                                        </Button>
+                                    </p>
+                                    </Col>
+                                </Row>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col md="12">
+                            <Card>
+                                <CardBody>
+                                <Row>
+                                    <Col md="4">
+                                    <div style={{position: 'relative'}}>
+                                        <img
+                                        alt="..."
+                                        // className="img-center img-fluid"
+                                        style={{width: '100%', height: 'auto'}}
+                                        src={require("assets/img/apt302/four.jpg")}
+                                        />
+                                        <div
+                                        style={{
+                                            position: 'absolute',
+                                            top: '8px',
+                                            left: '16px'
+                                        }}
+                                        >
+                                        <Badge className="badge-default">For rent</Badge>
+                                        <Badge className="badge-success">Furnished</Badge>
+                                        </div>
+                                        <div
+                                        style={{
+                                            position: 'absolute',
+                                            bottom: '8px',
+                                            right: '16px'
+                                        }}
+                                        >
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048349"
+                                        >
+                                            <i className="tim-icons icon-camera-18" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048349"
+                                        >
+                                            <span>(4) pictures</span>
+                                        </UncontrolledTooltip>
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048346"
+                                        >
+                                            <i className="tim-icons icon-simple-add" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048346"
+                                        >
+                                            <span>Compare</span>
+                                        </UncontrolledTooltip>
+                                        <Button
+                                            className="btn-icon btn-round btn-sm"
+                                            color="default"
+                                            type="button"
+                                            id="tooltip376048347"
+                                        >
+                                            <i className="tim-icons icon-cart" />
+                                        </Button>
+                                        <UncontrolledTooltip
+                                            delay={0}
+                                            color="default"
+                                            placement="top"
+                                            target="tooltip376048347"
+                                        >
+                                            <span>Book place</span>
+                                        </UncontrolledTooltip>
+                                        </div>
+                                    </div>
+                                    </Col>
+                                    <Col style={{
+                                        textAlign: 'left'
+                                    }} md="8">
+                                    <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                                    <h5>Location: Vision city, Gacuriro, Kigali</h5>
+                                    <h6>Bedrooms: 3, Baths: 2</h6>
+                                    <Badge className="badge-danger">Apartment</Badge>
+                                    <p>
+                                        <Button className="btn-simple btn-sm btn-block" color="info">
+                                            More
+                                        </Button>
+                                    </p>
                                     </Col>
                                 </Row>
                                 </CardBody>
@@ -238,7 +531,7 @@ class Index extends React.Component {
                                             </FormGroup>
                                         </Col>
                                     </Row>
-                                    <Button className="btn btn-sm btn-block" color="success">
+                                    <Button className="btn btn-sm" color="success">
                                         <span style={{display: 'inline'}}>
                                             <span>
                                                 Search

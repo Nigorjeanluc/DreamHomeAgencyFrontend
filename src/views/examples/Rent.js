@@ -682,7 +682,7 @@ class Index extends React.Component {
                                     </div>
                                     </Col>
                                     <Col className="text-center" md="12">
-                                    <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 3 bedrooms apartment</h4>
+                                    <h4 style={{color: 'white', marginTop: '10px'}}>Spacious 1 bedrooms apartment</h4>
                                     <h5>Location: Vision city, Gacuriro, Kigali</h5>
                                     <h6>Bedrooms: 3, Baths: 2</h6>
                                     <Badge className="badge-danger">Apartment</Badge>

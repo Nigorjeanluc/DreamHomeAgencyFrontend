@@ -74,12 +74,12 @@ class Index extends React.Component {
                         <div className="icon icon-success">
                           <i className="tim-icons icon-single-02" />
                         </div>
-                        <h4 className="info-title">Verified People</h4>
+                        <h4 className="info-title">Our Values</h4>
                         <hr className="line-success" />
                         <p>
-                          Divide details about your product or agency work into
-                          parts. Write a few lines about each one. A paragraph
-                          describing be enough.
+                            Integrity-Match behavior with values 
+                            Failure leads to success-Learn from our mistakes
+                            Speaks with good purpose-speak honestly and kindly.
                         </p>
                       </div>
                     </Col>

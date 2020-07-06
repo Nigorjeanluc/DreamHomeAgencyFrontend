@@ -286,7 +286,7 @@ class LandingPage extends React.Component {
               </Row>
             </Container>
           </div>
-          <section className="section section-lg">
+          <section className="section section-lg background sectionOneFonts">
             <section className="section">
               <img
                 alt="..."
@@ -299,7 +299,7 @@ class LandingPage extends React.Component {
                     <hr className="line-info" />
                     <h1>
                       Choose the place{" "}
-                      <span className="text-info">that fits your needs</span>
+                      <span className="text-primary">that fits your needs</span>
                     </h1>
                   </Col>
                 </Row>
@@ -392,22 +392,21 @@ class LandingPage extends React.Component {
                   </Col>
                   <Col md="6">
                     <div className="pl-md-5">
-                      <h1>
-                        Large range<br />
-                        of choices
+                      <h1 className="text-warning sectTitle">
+                        Large range of choices
                       </h1>
-                      <p>
+                      <p className="sectPara">
                         We offer you thousands of nice places, and at reasonable price
                       </p>
                       <br />
-                      <p>
+                      <p className="sectPara">
                         You are at the right place to choose a place that fit your needs.
                       </p>
                       <br />
                       <a
-                        className="font-weight-bold text-info mt-5"
-                        href="#something"
-                        onClick={e => e.preventDefault()}
+                        className="font-weight-bold text-info mt-5 sectPara"
+                        href="/rent"
+                        // onClick={e => e.preventDefault()}
                       >
                         Show all{" "}
                         <i className="tim-icons icon-minimal-right text-info" />
@@ -552,10 +551,10 @@ class LandingPage extends React.Component {
             /> */}
             <Container>
               <div className="title">
-                <h2>Properties</h2>
+                <h2 className="text-center">RidgeView Apartments</h2>
               </div>
               <Row>
-              <Col md="4" sm="6" xs="12">
+              <Col md="6" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -662,7 +661,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4" sm="6" xs="12">
+                <Col md="6" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -769,7 +768,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4" sm="6" xs="12">
+                <Col md="6" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -876,7 +875,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4" sm="6" xs="12">
+                <Col md="6" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -983,7 +982,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4" sm="6" xs="12">
+                <Col md="6" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>
@@ -1090,7 +1089,7 @@ class LandingPage extends React.Component {
                     </CardFooter>
                   </Card>
                 </Col>
-                <Col md="4" sm="6" xs="12">
+                <Col md="6" sm="6" xs="12">
                   <Card>
                     <CardBody>
                       <Row>

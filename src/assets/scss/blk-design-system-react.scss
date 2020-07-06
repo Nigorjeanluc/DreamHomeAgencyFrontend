@@ -144,3 +144,27 @@ $asset-base-path: '../../../../assets' !default;
     font-size: large;
     font-weight: 900;
 }
+
+.background {
+    background-image: url('https://c.pxhere.com/photos/eb/57/balconies_building_patio_plants_looking_up_pattern_apartments-838587.jpg!d');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sectionOneFonts {
+    font-family: 'Pacifico';
+    color: white;
+    text-shadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)';
+}
+
+.sectTitle {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.829), 0px 8px 13px rgba(0, 0, 0, 0.658), 0px 18px 23px rgba(0, 0, 0, 0.575);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sectPara {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.829), 0px 8px 13px rgba(0, 0, 0, 0.658), 0px 18px 23px rgba(0, 0, 0, 0.575);
+    font-size: 24px;
+}
